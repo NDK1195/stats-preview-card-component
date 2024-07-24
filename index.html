@@ -14,9 +14,74 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
-  <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+  <body class="bg-very-dark-blue h-screen flex items-center justify-center">
+    <main
+      class="bg-dark-desaturated-blue mx-6 min-w-[327px] max-w-[1110px] rounded-lg shadow-box flex flex-col lg:flex-row-reverse items-center lg:items-stretch"
+    >
+      <div
+        class="bg-soft-violet rounded-t-lg lg:rounded-tl-none lg:rounded-tr-lg lg:rounded-br-lg"
+      >
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="image header mobile"
+            class="rounded-t-lg lg:rounded-tl-none lg:rounded-tr-lg lg:rounded-br-lg mix-blend-multiply opacity-[0.7511] object-cover w-full h-full"
+          />
+        </picture>
+      </div>
+
+      <div
+        class="px-8 pb-8 pt-10 lg:pt-[72px] lg:pl-[72px] lg:pb-[60px] lg:pr-28 text-center lg:text-left max-w-[570px]"
+      >
+        <h1
+          class="text-white font-inter text-[28px] lg:text-4xl font-bold leading-8 lg:leading-[44px] mb-4 lg:mb-6"
+        >
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h1>
+
+        <p
+          class="text-white font-inter text-[15px] leading-[25px] opacity-75 mb-10 lg:mb-[72px]"
+        >
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div
+          class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center text-white"
+        >
+          <div class="flex flex-col items-center lg:items-start gap-1">
+            <p class="font-inter text-2xl font-bold">10k+</p>
+            <p
+              class="font-lexendDeca text-xs leading-[25px] tracking-[1px] uppercase opacity-60"
+            >
+              companies
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center lg:items-start gap-1">
+            <p class="font-inter text-2xl font-bold">314</p>
+            <p
+              class="font-lexendDeca text-xs leading-[25px] tracking-[1px] uppercase opacity-60"
+            >
+              templates
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center lg:items-start gap-1">
+            <p class="font-inter text-2xl font-bold">12m+</p>
+            <p
+              class="font-lexendDeca text-xs leading-[25px] tracking-[1px] uppercase opacity-60"
+            >
+              queries
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
